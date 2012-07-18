@@ -8,7 +8,7 @@
         <script>
             alert("Halo dunia");
             document.write("karepe opo?");
-            
+            dsfdfdsfd
         </script>
     </body>
 </html>
