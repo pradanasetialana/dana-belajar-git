@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body onload="alert('selamat datang')" >
+        <a href="http://google.com" onclick="alert('hello')">Google</a>
+        <a href="http://google.com">Google</a>
+        <br>
+        <input type="text" id="abc" value="123"/>
+        <input type="submit" value="Aksi" onclick="jquerybos()"/>
+        <script>
+        </script>
+        
+        <br>
+        <input type="radio" name="rd1" onclick="document.bgColor='red'"/>
+        <input type="radio" name="rd1" onclick="document.bgColor='blue'"/>
+        <table>
+            <tr onmouseover="this.bgColor='red'" onmouseout="this.bgColor='white'">
+                <td>Baris Pertama</td>
+            </tr>
+        </table>
+        <br>
+        <form name="coba" onSubmit="cekemail(this.cobatxt.value); return false">
+            <input type="text" name="cobatxt"/>
+            <input type="submit" value="Kirim"/>
+        </form>
+        <script>
+            function cekemail(email) {
+                if (email.indexOf("@") != -1) {
+                    alert("ini email");
+                } else {
+                    alert("bukan email");
+                }
+            }
+        </script>
+        <br>
+        <form name="hitungkata">
+            <textarea rows="12" cols="28" name="teks"></textarea>
+            <input type="button" value="Hitung kata" onclick="htgkata()"/>
+            <input type="text" name="jumlah"/>
+            <br>
+            Jumlah huruf : <input type="text" name="huruf"/>
+            
+        </form>
+        <script>
+            function htgkata() {
+                var kata = document.hitungkata.teks.value;
+                document.hitungkata.huruf.value = kata.length;
+                var isi = kata.split(" ");
+                document.hitungkata.jumlah.value = isi.length;
+            }
+        </script>
+    </body>
+</html>
