@@ -7,6 +7,7 @@
     <body>
         <script>
             alert("Halo dunia");
+			alert("Test");
         </script>
     </body>
 </html>
