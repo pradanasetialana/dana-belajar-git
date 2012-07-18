@@ -7,8 +7,7 @@
     <body>
         <script>
             alert("Halo dunia");
-			alert("Test");
-			//alert("coba lagi");
+            document.write("karepe opo?");
         </script>
     </body>
 </html>
